@@ -145,10 +145,10 @@ const Form = ({
   `;
 
   return (
-    <div className="text-center flex flex-col items-center justify-center w-full sm:max-w-[35em] z-30">
-      <div className="flex flex-col sm:gap-5 gap-2 w-full">
+    <div className="text-center flex flex-col items-center justify-center w-full max-w-[35em] z-30">
+      <div className="flex flex-col gap-5 py-12 px-8 w-full">
         <form
-          className=" grid sm:gap-5 gap-2 grid-cols-3 w-full"
+          className="grid gap-5 grid-cols-3 w-full"
           onSubmit={(e) => handleClick}
         >
           <TextField
@@ -217,8 +217,7 @@ const Form = ({
           </div>
           <StyledButton
             onClick={handleSecondClick}
-            className={`border bg-[#7214ff] text-white font-bold w-full`}
-            sx={{ padding: "1rem" }}
+            className={`border bg-[#7214ff] text-white font-bold w-full p-4`}
             loading={loadingData}
             variant="contained"
             disabled={noTweets}
